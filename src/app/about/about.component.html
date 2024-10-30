@@ -1,0 +1,48 @@
+<div
+  class="d-flex justify-content-center align-items-center flex-column gap-3 w-100 p-3"
+>
+  <div
+    class="title container d-flex justify-content-center align-items-center flex-column w-100 p-3 gap-3"
+  >
+    <h1>Подільський зоопарк</h1>
+  </div>
+  <app-container [data]="data"></app-container>
+  <div class="container d-flex justify-content-center w-100">
+    <img class="img-fluid" src="../../assets/3_picture.png" alt="3" />
+  </div>
+  <app-container [data]="data1"></app-container>
+  <div class="container d-flex flex-column w-100 justify-content-center">
+    <div class="container d-flex justify-content-between gap-3" [ngClass]="{ 'flex-column': baseService.isMobile }">
+      <img class="img-fluid" src="../../assets/2424.png" alt="2424" />
+      <img class="img-fluid" src="../../assets/2425.png" alt="2425" />
+    </div>
+    <div class="container w-100 p-3">
+      <p>
+        В 2018-2019 році було збудовано велике ведмеже містечко для утримання та
+        розведення бурих та гімалайських ведмедів. Надсучасний вольєр увібрав в
+        себе найновіші технології та стандарти, а саме: скляний фасад замість
+        традиційних кліток – це дозволяє відвідувачам і тваринам відчувати себе
+        в безпосередній близькості та при цьому не передавати один одному свою
+        енергетику; басейн з постійною фільтрацією води,каналізація, барліг який
+        розташований на глибині вольєру в якому температура повітря ніколи не
+        опускається нижче +5 градусів, рухомі решітчасті стінки – перегородки
+        які дозволяють безстресово, а також без застосування транквілізаторів
+        проводити ведмедям планові медичні огляди, щеплення, обрізування кігтів.
+      </p>
+      <p>
+        Просторі вольєри мають і птахи Подільського зоопарку. А водоплаваючі
+        мають бассейн.
+      </p>
+      <p>
+        Птахи-хижаки: орли, соколи, сипи мають у своєму вольєрі макети веж, з
+        яких споглядають за навколишньою метушнею зоопарку.
+      </p>
+    </div>
+  </div>
+
+  <div class="container w-100 d-flex justify-content-center">
+    <img class="img-fluid" src="../../assets/Frame9.png" alt="Frame9" />
+  </div>
+
+  <app-container [data]="data2"></app-container>
+</div>

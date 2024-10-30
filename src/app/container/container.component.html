@@ -1,0 +1,35 @@
+<div class="container w-100">
+  <div *ngFor="let item of data; let i = index; let last = last">
+    <div
+      class="d-flex justify-content-center align-items-center gap-3 w-100 p-3 mb-3"
+      *ngIf="!baseService.isMobile"
+    >
+      <div class="image w-50">
+        <img src="{{ item.url }}" alt="image" />
+      </div>
+      <div class="text w-100">
+        <p>{{ item.description }}</p>
+        <p>{{ item.description1 }}</p>
+      </div>
+    </div>
+
+    <div
+      class="d-flex justify-content-center flex-column align-items-center gap-3 w-100 p-3 mb-3"
+      *ngIf="baseService.isMobile"
+    >
+      <div class="image w-100">
+        <img src="{{ item.url }}" alt="image" />
+      </div>
+      <div class="text w-100">
+        <p>{{ item.description }}</p>
+        <p>{{ item.description1 }}</p>
+      </div>
+    </div>
+
+    <div
+      *ngIf="data.length === 1 || (data.length > 1 && !last)"
+      class="hr"
+      [ngStyle]="{ backgroundColor: i % 2 === 0 ? '#ec8f5e' : '#f3b664' }"
+    ></div>
+  </div>
+</div>
