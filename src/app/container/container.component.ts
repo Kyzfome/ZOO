@@ -3,6 +3,7 @@ import { BaseService } from '../services/base.service';
 
 export interface DataItem {
   url: string;
+  title: string;
   description: string;
   description1: string;
 }
