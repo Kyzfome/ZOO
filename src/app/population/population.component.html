@@ -8,7 +8,10 @@
   <div class="hr"></div>
 
   <div class="container d-flex flex-column p-3">
-    <div class="population-container d-flex w-100 gap-3">
+    <div
+      class="population-container d-flex w-100 gap-3"
+      [ngClass]="{ 'flex-column': baseService.isMobile }"
+    >
       <div class="population d-flex w-100 gap-3">
         <img src="../../assets/1_animall.png" alt="1_animall" />
         <div class="d-flex flex-column justify-content-center">
@@ -24,7 +27,10 @@
         </div>
       </div>
     </div>
-    <div class="popukation-container d-flex w-100 gap-3">
+    <div
+      class="popukation-container d-flex w-100 gap-3"
+      [ngClass]="{ 'flex-column': baseService.isMobile }"
+    >
       <div class="population d-flex w-100 gap-3">
         <img src="../../assets/buffalo.png" alt="1_animall" />
         <div class="d-flex flex-column justify-content-center">
@@ -40,7 +46,10 @@
         </div>
       </div>
     </div>
-    <div class="popukation-container d-flex w-100 gap-3">
+    <div
+      class="popukation-container d-flex w-100 gap-3"
+      [ngClass]="{ 'flex-column': baseService.isMobile }"
+    >
       <div class="population d-flex w-100 gap-3">
         <img src="../../assets/bear.png" alt="1_animall" />
         <div class="d-flex flex-column justify-content-center">

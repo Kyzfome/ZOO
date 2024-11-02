@@ -4,15 +4,28 @@
   <div
     class="title container d-flex justify-content-center align-items-center flex-column w-100 p-3 gap-3"
   >
-    <h1>Новини та івенти</h1>
+    <h1>Фото</h1>
   </div>
-  <div class="container d-flex justify-content-center w-100 gap-3">
-    <div *ngFor="let item of data; let i = index" class="d-flex flex-column gap-3">
-        <img [src]="item.url" alt="{{i}}">
+  <div class="container d-flex gap-3" [ngClass]="{ 'flex-column': baseService.isMobile }">
+    <div
+      class="container d-flex flex-column justify-content-center w-100 gap-3"
+    >
+      <div *ngFor="let item of data; let i = index" class="d-flex gap-3">
+        <img class="img-fluid" [src]="item.url" alt="{{ i }}" />
+      </div>
     </div>
-    <div *ngFor="let item of data1; let i = index" class="d-flex flex-column gap-3">
-        <img [src]="item.url" alt="{{i}}">
+    <div
+      class="container d-flex flex-column justify-content-center w-100 gap-3"
+    >
+      <div
+        *ngFor="let item of data1; let i = index"
+        class="d-flex flex-column gap-3"
+      >
+        <img class="img-fluid" [src]="item.url" alt="{{ i }}" />
+      </div>
     </div>
   </div>
-  <div class="hr"></div>
+  <div class="container w-100">
+    <div class="hr"></div>
+  </div>
 </div>

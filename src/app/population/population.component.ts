@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BaseService } from '../services/base.service';
 
 @Component({
   selector: 'app-population',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './population.component.scss',
 })
 export class PopulationComponent {
+  constructor(public baseService: BaseService) {}
+
   data: any = [
     {
       url: '../../assets/7_picture.png',
